@@ -2,26 +2,24 @@
     <head>
         <title>Facebook</title>
         <link rel="stylesheet" href="styles.css">
-       <!--  <link rel="stylesheet" href="script.Js"> -->
-       <script type="text/javascript">
-         function btnclick()
-        {
-            var username1 = documnet.getElementById('loginusername').value;
-            var Password1 = documnet.getElementById('loginpassword').value;
-            if (username1 == "Arbab") 
+
+      <script type="text/javascript">
+        function btn_click() {
+            // body...
+            var name = document.getElementById("loginusername").value;
+            var  pass= document.getElementById("loginpassword").value;
+
+            if (name == "Arbab" && pass == "12345") 
             {
-              if (Password1 == "12345") 
-              {
-                alert(username1 + " ! Login Successfull");
-              } 
-              else
-              {
-               alert("Incorrect username/password");
-              }
+                alert(name+" Successfully login....!");
             }
-           
+            else
+            {
+                alert("Invalid User Name or Password");
+
+            } 
         }
-       </script>
+    </script>
     </head>
     <body>
         <header>
@@ -40,7 +38,7 @@
                    <br>
                    <input type="password" name="upassword" placeholder="Enter password" id="loginpassword">
                    <br>
-                   <button onclick="btnclick()"  class="btn login-btn">Log In</button>
+                   <button onclick="btn_click()"  class="btn login-btn" type="button">Log In</button>
                    <p>********* or *********</p>
                    <button class="btn create-btn">Create New Account</button>
                    <br>
