@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Facebook</title>
+        <link rel="stylesheet" href="styles.css">
+       <!--  <link rel="stylesheet" href="script.Js"> -->
+       <script type="text/javascript">
+         function btnclick()
+        {
+            var username1 = documnet.getElementById('loginusername').value;
+            var Password1 = documnet.getElementById('loginpassword').value;
+            if (username1 == "Arbab") 
+            {
+              if (Password1 == "12345") 
+              {
+                alert(username1 + " ! Login Successfull");
+              } 
+              else
+              {
+               alert("Incorrect username/password");
+              }
+            }
+           
+        }
+       </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                   <h2>facebook</h2>
+                </div>
+            </div>
+        </header>
+    
+        <main>
+           <div class="form">
+               <form name="myform">
+                   <p id="login-head">Login to Facebook</p>
+                   <input type="text" name="uname" placeholder="Enter username" id="loginusername">
+                   <br>
+                   <input type="password" name="upassword" placeholder="Enter password" id="loginpassword">
+                   <br>
+                   <button onclick="btnclick()"  class="btn login-btn">Log In</button>
+                   <p>********* or *********</p>
+                   <button class="btn create-btn">Create New Account</button>
+                   <br>
+                   <br>
+                   <a href="#">Forgotten account?</a>
+               </form>
+           </div>
+        </main>
+    </body>
+</html>
