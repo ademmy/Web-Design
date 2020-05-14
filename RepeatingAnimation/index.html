@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Repeating Animation</title>
+	<style type="text/css">
+		.wrapper{
+			margin-top: 25%;
+			margin-left: 30%;
+			display: flex;
+		}
+		.rotate{
+			width: 120px;
+			height: 120px;
+			border-radius: 60px;
+			font-size: 20px;
+			padding: 40px 15px;
+			box-sizing: border-box;
+			text-align: center;
+			transition: 1s;
+			color: white;
+		}
+		.rotate1{
+			background: #F08973;
+			animation-name: rotate1;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+		.rotate2{
+			background: skyblue;
+			animation-name: rotate2;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+		.rotate3{
+			background: #EFCC6E ;
+			animation-name: rotate3;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+		.rotate4{
+			background: #80B862 ;
+			animation-name: rotate4;
+			animation-duration: 3s;
+			animation-fill-mode: forwards;
+			animation-iteration-count: infinite;
+		}
+
+		.rotate1:hover{
+			background: red;
+		}
+		.rotate2:hover{
+			background: blue;
+		}
+		.rotate3:hover{
+			background: orange ;
+			
+		}
+		.rotate4:hover{
+			background: green ;
+			
+		}
+		@keyframes rotate1{
+			from{
+				transform: translate(0px)
+			}
+			to{
+				transform: translateX(-100px)
+			}
+		}
+		@keyframes rotate2{
+			from{
+				transform: translate(0px)
+			}
+			to{
+				transform: translateY(-100px)
+			}
+		}
+		@keyframes rotate3{
+			from{
+				transform: translate(0px)
+			}
+			to{
+				transform: translateY(100px)
+			}
+		}
+		@keyframes rotate4{
+			from{
+				transform: translate(0px)
+			}
+			to{
+				transform: translateX(100px)
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="rotate rotate1">Arbab</div>
+		<div class="rotate rotate2">Arbab</div>
+		<div class="rotate rotate3">Arbab</div>
+		<div class="rotate rotate4">Arbab</div>
+	</div>
+</body>
+</html>
