@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition</title>
+	<style type="text/css">
+		.wrapper{
+			margin-top: 25%;
+			margin-left: 30%;
+			display: flex;
+		}
+		.rotate{
+			width: 120px;
+			height: 120px;
+			border-radius: 60px;
+			font-size: 20px;
+			padding: 40px 15px;
+			box-sizing: border-box;
+			text-align: center;
+			transition: 1s/*, transform 0.3s*/;
+			color: white;
+		}
+		.rotate1{
+			background: #F08973;
+		}
+		.rotate2{
+			background: skyblue;
+		}
+		.rotate3{
+			background: #EFCC6E ;
+		}
+		.rotate4{
+			background: #80B862 ;
+			transition: background 1s, transform 0.3s 1s;
+		}
+		.rotate1:hover{
+			background: red;
+			transform: rotate(360deg);
+		}
+		.rotate2:hover{
+			background: blue;
+			transform: rotateX(360deg);
+		}
+		.rotate3:hover{
+			background: orange ;
+			transform: rotateY(360deg);
+		}
+		.rotate4:hover{
+			background: green ;
+			transform: rotateZ(360deg);
+		}
+
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="rotate rotate1">Hover Me</div>
+		<div class="rotate rotate2">Hover Me</div>
+		<div class="rotate rotate3">Hover Me</div>
+		<div class="rotate rotate4">Hover Me</div>
+	</div>
+</body>
+</html>
