@@ -25,6 +25,9 @@
 			animation-duration: 3s;
 			animation-fill-mode: forwards;
 			animation-iteration-count: infinite;
+			animation-direction: forwards;
+			animation-direction: reverse;
+			animation-direction: alternate;
 		}
 		.rotate2{
 			background: skyblue;
@@ -32,6 +35,7 @@
 			animation-duration: 3s;
 			animation-fill-mode: forwards;
 			animation-iteration-count: infinite;
+			animation-direction: alternate;
 		}
 		.rotate3{
 			background: #EFCC6E ;
@@ -39,6 +43,7 @@
 			animation-duration: 3s;
 			animation-fill-mode: forwards;
 			animation-iteration-count: infinite;
+			animation-direction: alternate;
 		}
 		.rotate4{
 			background: #80B862 ;
@@ -46,22 +51,9 @@
 			animation-duration: 3s;
 			animation-fill-mode: forwards;
 			animation-iteration-count: infinite;
+			animation-direction: alternate;
 		}
 
-		.rotate1:hover{
-			background: red;
-		}
-		.rotate2:hover{
-			background: blue;
-		}
-		.rotate3:hover{
-			background: orange ;
-			
-		}
-		.rotate4:hover{
-			background: green ;
-			
-		}
 		@keyframes rotate1{
 			from{
 				transform: translate(0px)
