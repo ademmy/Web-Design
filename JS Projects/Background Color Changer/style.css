@@ -22,9 +22,18 @@ h4{
     color: white;
 }
 button{
-    width: 150px;
-    height: 30px;
-    border-style: none;
-    border-radius: 10px;
+    width: 170px;
+    height: 45px;
+    background-color: transparent;
+    color: white;
+    border:2px solid white;
+    font-size: 17px;
+    border-radius: 2px;
     outline: none;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
 }
